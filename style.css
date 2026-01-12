@@ -1,0 +1,86 @@
+/* VocalAI Core Styles */
+:root {
+    --bg-deep: #0a0a0b;
+    --bg-card: #141417;
+    --primary: #38bdf8;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --border: #1e293b;
+}
+
+body {
+    background-color: var(--bg-deep);
+    color: var(--text-main);
+    font-family: 'Inter', system-ui, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+.text-gradient { color: var(--primary); font-weight: bold; }
+
+/* Navigation - Flexbox */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 10%;
+    background: rgba(10, 10, 11, 0.9);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo { font-size: 1.5rem; font-weight: 800; color: var(--primary); }
+nav ul { display: flex; list-style: none; gap: 2.5rem; margin: 0; padding: 0; }
+nav ul a { text-decoration: none; color: var(--text-muted); font-weight: 500; transition: 0.3s; }
+nav ul a:hover { color: var(--primary); }
+
+/* Layout - CSS Grid */
+.hero-section { text-align: center; padding: 6rem 0 4rem; }
+.hero-section h1 { font-size: 3.5rem; margin-bottom: 1rem; }
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.card {
+    background: var(--bg-card);
+    padding: 2.5rem;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    transition: 0.3s;
+}
+.card:hover { border-color: var(--primary); transform: translateY(-5px); }
+.card h2 { margin-top: 0; font-size: 1.5rem; }
+.tagline { color: var(--primary); font-size: 0.9rem; font-weight: 600; text-transform: uppercase; }
+
+.feature-list { list-style: none; padding: 0; margin-top: 1.5rem; }
+.feature-list li { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 10px; }
+.feature-list li::before { content: "✓"; color: var(--primary); font-weight: bold; }
+
+/* Table Styling */
+.table-section { margin-top: 4rem; padding-bottom: 4rem; }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--bg-card);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th, td { padding: 1.5rem; text-align: left; border-bottom: 1px solid var(--border); }
+th { background: #1a1a1c; color: var(--primary); text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
+td { color: var(--text-muted); }
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    nav { flex-direction: column; gap: 1.5rem; padding: 1.5rem 5%; }
+    .hero-section h1 { font-size: 2.5rem; }
+    .hero-section { padding: 4rem 0 2rem; }
+}
