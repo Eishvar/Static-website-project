@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Services | VocalAI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Voice Models | VocalAI Services</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
-        <a href="index.html" class="logo">VOCAL.AI</a>
+        <div class="logo">VOCAL.AI</div>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
@@ -15,17 +16,49 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+
+    <header class="container hero-section">
+        <h1>Our AI <span class="text-gradient">Voice Models</span></h1>
+        <p>Choose from our suite of specialized AI models, each engineered for different use cases.</p>
+    </header>
+
     <main class="container">
-        <h1 style="margin-top: 50px;">AI Voice Models</h1>
-        <div class="grid">
-            <div class="card"><h3>Neural TTS</h3><p>Standard high-quality narration.</p></div>
-            <div class="card"><h3>Voice Cloning</h3><p>Clone any voice in 30 seconds.</p></div>
+        <div class="grid-layout">
+            <article class="card">
+                <h2>Neural TTS Model</h2>
+                <p>Our foundation model delivers crystal-clear narration. Perfect for audiobooks and e-learning.</p>
+            </article>
+            <article class="card">
+                <h2>Emotional Prosody</h2>
+                <p>Bring scripts to life with emotion-aware synthesis for storytelling and acting.</p>
+            </article>
+            <article class="card">
+                <h2>Instant Voice Cloning</h2>
+                <p>Clone any voice with just 30 seconds of clean audio perfectly.</p>
+            </article>
+            <article class="card">
+                <h2>Professional Voice Lab</h2>
+                <p>Design entirely new synthetic voices from scratch for unique brand identities.</p>
+            </article>
         </div>
-        
-        <div style="text-align: center; margin-top: 50px;">
-            <h2>Ready to see our rates?</h2>
+
+        <section class="table-section">
+            <h2 style="text-align: center; margin-bottom: 2rem;">Model <span class="text-gradient">Comparison</span></h2>
+            <table>
+                <thead>
+                    <tr><th>Model</th><th>Latency</th><th>Emotional Range</th><th>Compute Cost</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Neural TTS</td><td>&lt; 100ms</td><td>Basic</td><td>Low</td></tr>
+                    <tr><td>Voice Cloning</td><td>&lt; 150ms</td><td>Moderate</td><td>High</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section style="text-align: center; margin: 4rem 0;">
+            <h3>Ready to find the perfect plan for your needs?</h3>
             <a href="pricing.html" class="button">View Pricing Plans</a>
-        </div>
+        </section>
     </main>
 </body>
 </html>

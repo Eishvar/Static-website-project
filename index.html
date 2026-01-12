@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>VocalAI | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VocalAI | Transform Text Into Lifelike Speech</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
-        <a href="index.html" class="logo">VOCAL.AI</a>
+        <div class="logo">VOCAL.AI</div>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
@@ -15,12 +16,39 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <header class="container" style="padding: 100px 0;">
-        <h1>Transform Text Into <span style="color: var(--primary);">Lifelike Speech</span></h1>
-        <div style="margin-top: 30px;">
-            <a href="services.html" class="button">Explore Services</a>
-            <a href="contact.html" class="button-outline">Contact Us</a>
+
+    <header class="container hero-section">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: center; text-align: left;">
+            <div>
+                <h1>Transform Text Into <span class="text-gradient">Lifelike Speech</span></h1>
+                <p style="color: var(--text-muted); margin: 20px 0;">Create stunning voiceovers, audiobooks, and podcasts with our cutting-edge AI voice synthesis.</p>
+                <div style="display: flex; gap: 15px;">
+                    <a href="services.html" class="button">Explore Services</a>
+                    <a href="contact.html" class="button outline">Contact Sales</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/hero-voice-ai.jpg" alt="AI Voice Visualization" style="width: 100%; border-radius: 15px;">
+            </div>
         </div>
     </header>
+
+    <section class="container">
+        <h2 style="text-align: center; margin-bottom: 40px;">Powerful AI Capabilities</h2>
+        <div class="grid-features">
+            <div class="card">
+                <h3>Neural Voice Cloning</h3>
+                <p>Clone any voice with just 30 seconds of audio. Our AI captures unique vocal characteristics.</p>
+            </div>
+            <div class="card">
+                <h3>Emotion-Based Synthesis</h3>
+                <p>Infuse emotions into your speech. From excitement to calm, our AI generates voices that resonate.</p>
+            </div>
+            <div class="card">
+                <h3>API Integration</h3>
+                <p>Seamlessly integrate VocalAI into your applications with our low-latency RESTful API.</p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
